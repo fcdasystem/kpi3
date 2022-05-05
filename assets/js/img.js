@@ -1,4 +1,9 @@
-function setImageVisible(brs, visible) {
-    var img = document.getElementById(brs);
-    img.style.visibility = (visible ? 'visible' : 'hidden');
+function del() {
+    element = document.querySelector('.image-block');
+    element.style.visibility = 'hidden';
+}
+
+function add() {
+    element = document.querySelector('.image-block');
+    element.style.visibility = 'visible';
 }
