@@ -1,17 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="ua">
 <head>
     <title>Site For KPI</title>
 	<meta charset="utf-8">
 	<meta name="keywords" content="ЗП-ЗПІ-01, KPI" />
 	<meta name="description" content="Інформація про студента, KPI">
 	<link rel="stylesheet" href="assets/css/style5.css"> 
+	
 </head>
 
 <body>
 
-<h1><p id="10">Name Last Name</p></h1>
+<h1><p class="new" id="10">Name Last Name</p></h1>
 
-<p class="text2	">Місце народження: 10.10.1990, Kyiv</p>
+<div id="born"><p class="text2	">Місце народження: 10.10.1990, Kyiv</p></div>
 	<p>Освіта: Вища<p>
 	<p >Хоббі:<p>
 	<ul>
@@ -36,10 +38,18 @@
     столиця автономної області Каталонії і провінції Барселона.
 	<p>
 	
-	<a href="https://uk.wikipedia.org/wiki/%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0" >
-	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Barcelona_collage.JPG" height = 400,  width = 700></a>
-	<div id="button"> <button id="b1">Add</button> <button id="b2">Zoom in</button> <button id="b3">Zoom Out</button>  <button id="b4">Del</button> </div>
+		
+	<div id="button">
+			<button type="button" onclick="add()">Add</button>
+			<button type="button" onclick="zoomin()">Zoom-In</button>
+			<button type="button" onclick="zoomout()"> Zoom-Out</button> 
+			<button type="button" onclick="setImageVisible()">Del</button>
+		
+		
+	<div id ="img"><img id="brs" src="https://pbs.twimg.com/media/D6HajRHXsAAA8Df?format=jpg&name=small" ></a> </div>
 
 </body>
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/zoom.js"></script>
+<script type="text/javascript" src="assets/js/img.js"></script>
 </html>

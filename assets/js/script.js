@@ -24,7 +24,7 @@ function changecolor() {
 	}
 	
 
-//зміна кольору при кліку другого елементу
+//зміна класу  при кліку другого елементу
 
 function changecolor2() {
 
@@ -34,4 +34,3 @@ function changecolor2() {
 	else
 	   sx.className = "text2";
 	}
-
